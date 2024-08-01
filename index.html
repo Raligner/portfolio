@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Angel Rapeta Web Developer Portfolio</title>
+        <link href="css/style-min.css" rel="stylesheet">
+        <link href="css/loconative-scroll.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/raphael.min.js"></script>
+        <script src="js/chart.js"></script>
+        <script src="js/loconative-scroll.js"></script>
+    </head>
+    <body>
+        <h1>Angel Rapeta Web Developer Portfolio</h1>
+        <main data-scroll-container>
+            <header class="menuRounded">
+                <nav class="menuRounded__buttons"> 
+                    <ul>
+                        <li><button onclick="toggleMenu()"></button></li>
+                        <li><a href="files/CV.pdf" target="_blank" ></a></li>
+                        <li><a href="https://www.linkedin.com/in/angel-rapeta/" target="_blank"></a></li>
+                        <li><a href="mailto:raligner@yahoo.com?cc=ralpad@gmail.com" target="_blank"></a></li>
+                    </ul>
+                </nav>  
+                <div class="menuRounded__background"></div>
+                <nav class="menuRounded__links">
+                    <ul>
+                        <li><a id="HomeMenu" href="#Home" data-scroll-to="">Home</a></li>
+                        <li><a id="AboutMenu" href="#About" data-scroll-to>About</a></li>
+                        <li><a id="WorksMenu" href="#Works" data-scroll-to>Works</a></li>
+                        <li><a id="ContactMenu" href="#Contact" data-scroll-to>Contact</a></li>                  
+                    </ul>
+                </nav>    
+            </header>
+            <section id="Home" class="homeVideo" data-scroll-section data-scroll-call="home">
+                <div class="homeVideo__content">
+                    <h2><span data-scroll data-scroll-speed="-2" data-scroll-position="top" data-scroll-delay="1">Hi, I'm Angel Rapeta</span>
+                        <span data-scroll data-scroll-speed="1" data-scroll-direction="horizontal" data-scroll-delay="1">Web</span>
+                        <span data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">Developer</span></h2>
+                </div>
+                <div class="homeVideo__background"></div>
+                <div class="homeVideo__wrapper">
+                    <iframe src="https://player.vimeo.com/video/892758914?background=1&autoplay=1&loop=1&byline=0&title=0"
+                            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>     
+                </div>
+            </section>
+            <article id="About" class="about" data-scroll-section data-scroll-call="about">
+                <img data-scroll data-scroll-speed="2" data-scroll-delay="1" src="img/aboutPhoto.png">
+                <aside>
+                    <h2>About</h2>
+                    <p>For the past seven years, I've dedicated myself to the realm of web development, innovating and honing techniques to create websites that establish a remarkable online presence, catering to businesses of all scales, from large enterprises to smaller ventures.</p>
+                    <!-- <a href="files/CV.pdf" target="_blank" class="buttonAbout">Resume</a> -->
+                    <button type="button" class="btnDownload" id="downloadCVButton">
+                        <span>Resume</span>
+                    </button>
+                </aside>
+            </article>
+            <section id="Skills" class="skills" data-scroll-section>
+                <div class="skills__content" id="scroll-direction">
+                    <h2>Skills</h2>
+                    <div id="chart" class="skills__chart" data-scroll data-scroll-speed="-1.5" data-scroll-delay="0.5" data-scroll-position="top" data-scroll-target="#direction"></div>
+                    <div class="skills__wrapper">
+                        <ul class="skills__items" id="direction">
+                            <li>
+                                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-target="#direction">Photoshop, Figma, UX/UI Principles, Responsive Design 85%</span>
+                            </li>
+                            <li>
+                                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="15" data-scroll-target="#direction" data-scroll-delay="0.05">PHP, Wordpress, Plugin creations, Elementor, DIVI 95%</span>
+                            </li>
+                            <li>
+                                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="8" data-scroll-target="#direction" data-scroll-delay="0.02">JavaScript, React/Vue Principles, AJAX, API Integration 80%</span>
+                            </li>
+                            <li>
+                                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-offset="0, 100" data-scroll-target="#direction" data-scroll-delay="0.10">CSS, Flexbox and Grid Layout, Template Creation 85%</span>
+                            </li>
+                            <li>
+                                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-target="#direction">Semantical HTML, SEO and Accesibility Optimization 90%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            </section>
+            <section id="Works" class="works" data-scroll-section data-scroll-call="works">
+                <div class="works__content">
+                    <h2>
+                        <span data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" data-scroll-delay="1">Gallery</span>
+                        <span data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">Works</span>
+                    </h2>
+                    <p>A website is a specially crafted digital canvas that intertwines creative design elements with structured code, enabling interaction with information, presenting ideas that transcend the digital realm.</p>
+                </div>
+                
+            </section>
+            <section id="project1" class="project" data-scroll-section>
+                
+                <div class="project__content">
+                    <div class="project__description">
+                        <h2><a>MX 1968 <br>MEXICO'S OLYMPIC ARCHITECTURE AND CITY THROUGH PRINT MEDIA</a></h2>
+                        <p>At the <strong>UNAM Architecture Faculty exhibition</strong>, the goal was to develop a website proficient in digitally showcasing select elements of the exhibition while vividly capturing its essential characteristics visually.</p>
+                    </div>
+                    <div class="project__image" data-scroll data-scroll-repeat>
+                        <div class="project__image_first"></div>
+                    </div>
+                    <div class="project__video">
+                        <video src="video/unam.webm" muted autoplay loop playsinline></video>      
+                    </div>
+                    <div class="project__img_1" data-scroll data-scroll-speed="1" data-scroll-offset="500" data-scroll-delay="0.15">
+                        <img src="img/unam_gallery_1.png">
+                    </div>
+                    <div class="project__img_2" data-scroll data-scroll-speed="2" data-scroll-offset="200" data-scroll-delay="0.05">
+                        <img src="img/unam_gallery_2.png">
+                    </div>
+                </div>   
+            </section>
+            <section id="project2" class="project" data-scroll-section>
+                <div class="project__content">
+                    <div class="project__image project__image_two" data-scroll data-scroll-repeat>
+                        <div class="project__image_second"></div> 
+                    </div>
+                    <div class="project__description project__description_two">
+                        <h2><a>Arcadia <br>Coin</a></h2>
+                        <p>I contributed to a project involving a website that initially resembles a video game. It showcases various content categories offered on their channel, along with inviting messages that encourage users to join and become part of the community.</p>
+                    </div>
+                    <div class="project__video">
+                        <video src="video/arcadiaCoin.webm" muted autoplay loop playsinline></video>      
+                    </div>
+                    <div class="project__img_1" data-scroll data-scroll-speed="2" data-scroll-offset="200" data-scroll-delay="0.05">
+                        <img src="img/acoin_gallery_2.png">
+                    </div>
+                    <div class="project__img_2" data-scroll data-scroll-speed="1" data-scroll-offset="500" data-scroll-delay="0.15">
+                        <img src="img/acoin_gallery_1.png">
+                    </div>
+                </div>   
+            </section>
+            <section id="project3" class="project" data-scroll-section>    
+                <div class="project__content">
+                    <div class="project__description">
+                        <h2><a>Estandares <br>NYCE</a></h2>
+                        <p>At Normalización y Certificación NYCE, I was responsible for planning and developing a new WordPress e-commerce website aimed at streamlining the process of obtaining documents related to regulatory standards.</p>
+                    </div>
+                    <div class="project__image project__image_three" data-scroll data-scroll-repeat>
+                        <div class="project__image_third"></div>
+                    </div>
+                    <div class="project__video">
+                        <video src="video/estandares.webm" muted autoplay loop playsinline></video>      
+                    </div>
+                    <div class="project__img_1" data-scroll data-scroll-speed="1" data-scroll-offset="500" data-scroll-delay="0.15">
+                        <img src="img/nyce_gallery_1.png">
+                    </div>
+                    <div class="project__img_2" data-scroll data-scroll-speed="2" data-scroll-offset="200" data-scroll-delay="0.05">
+                        <img src="img/nyce_gallery_2.png">
+                    </div>
+                </div>   
+            </section>
+            <section id="Contact" class="contact" data-scroll-call="contact">
+                <div class="contact__content">
+                    <h2><span >Contact</span>
+                        <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5" data-scroll-target="#Contact">Me</span>
+                    </h2>
+                    <p>If you have a new proyect, let’s get to work</p>
+                    <div></div>
+                    <footer>© 2024 raligner</footer>
+                </div>
+            </section>
+        </main> 
+        <div class="get">
+            <div class="arc">
+                <input type="hidden" class="percent" value="90"/>
+                <input type="hidden" class="color" value="#0a6c73"/>
+            </div>
+            <div class="arc">
+                <input type="hidden" class="percent" value="80"/>
+                <input type="hidden" class="color" value="#13795d"/>
+            </div>
+            <div class="arc">
+                <input type="hidden" class="percent" value="75"/>
+                <input type="hidden" class="color" value="#2d8d83"/>
+            </div>
+            <div class="arc">
+                <input type="hidden" class="percent" value="90"/>
+                <input type="hidden" class="color" value="#2b95a0"/>
+            </div>
+            <div class="arc">
+                <input type="hidden" class="percent" value="85"/>
+                <input type="hidden" class="color" value="#49767a"/>
+            </div>
+        </div>      
+        <script src="js/main.js"></script>
+    </body>    
+</html>
