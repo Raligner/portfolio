@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
     scrollFromAnywhere: true,
     multiplier: 1,
     reloadOnContextChange: true,
-    touchMultiplier: 3,
+    touchMultiplier: 5,
     smoothMobile: 0,
       smartphone: {
           smooth: !0,
@@ -22,6 +22,9 @@ window.addEventListener("load", () => {
       console.log(callValue);
     }; 
     if (callValue === "about") {
+      console.log(callValue);
+    };
+    if (callValue === "skills") {
       console.log(callValue);
     };
     if (callValue === "works") {
@@ -58,6 +61,9 @@ document.querySelector('#HomeMenu').onclick =function () {
 }
 
 document.querySelector('#AboutMenu').onclick =function () {
+  document.body.classList.toggle("menuRounded__menu_open");
+}
+document.querySelector('#SkillsMenu').onclick =function () {
   document.body.classList.toggle("menuRounded__menu_open");
 }
 
